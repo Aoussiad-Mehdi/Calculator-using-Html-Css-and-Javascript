@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Calculator</title>
+    <link rel="icon" href="index.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hanota Calculator</h1>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="wrap">
+            <form name="calc">
+                <input type="text" name="display" id="int">
+                <br>
+
+                <input type="button" value="7" onclick="calc.display.value+='7',changeBackground()">
+                <input type="button" value="8" onclick="calc.display.value+='8',changeBackground()">
+                <input type="button" value="9" onclick="calc.display.value+='9',changeBackground()">
+                <input type="button" value="+" onclick="calc.display.value+='+',changeBackground()">
+                <br>
+
+                <input type="button" value="4" onclick="calc.display.value+='4',changeBackground()">
+                <input type="button" value="5" onclick="calc.display.value+='5',changeBackground()">
+                <input type="button" value="6" onclick="calc.display.value+='6',changeBackground()">
+                <input type="button" value="-" onclick="calc.display.value+='-',changeBackground()">
+                <br>
+
+                <input type="button" value="1" onclick="calc.display.value+='1',changeBackground()">
+                <input type="button" value="2" onclick="calc.display.value+='2',changeBackground()">
+                <input type="button" value="3" onclick="calc.display.value+='3',changeBackground()">
+                <input type="button" value="*" onclick="calc.display.value+='*',changeBackground()">
+                <br>
+
+                <input type="button" value="0" onclick="calc.display.value+='0',changeBackground()">
+                <input type="button" value="." onclick="calc.display.value+='.',changeBackground()">
+                <input type="button" value ="=" onclick ="calc.display.value =eval(calc.display.value)">
+                <input type="button" value="/" onclick="calc.display.value+='/',changeBackground()">
+                <input type="button" value ="DEL" onclick ="calc.display.value='',whiteBackground()">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
