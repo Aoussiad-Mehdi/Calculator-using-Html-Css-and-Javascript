@@ -51,6 +51,9 @@ input[type="button"]:active{
     background: rgb(26, 182, 26);
     color: white;
 }
+#active{
+    background: aqua;
+}
 footer{
     background: #232535;
     width: 100%;
